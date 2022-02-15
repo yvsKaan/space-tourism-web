@@ -1,0 +1,127 @@
+.home{
+    position: absolute;
+    background: url('../../assets/home/background-home-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    top: 0;
+    z-index: -10;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+.content{
+    width: 500px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content h5{
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4px;
+
+    color: var(--main-color);
+}
+.content h1{
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 150px;
+    line-height: 172px;
+    
+    color: #FFFFFF;
+}
+.content p{
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+
+    color: var(--main-color);
+}
+
+.explore{
+    width: 274px;
+    height: 274px;
+    background-color: white;
+    border-radius: 274px;
+    text-align: center;
+}
+.explore p{
+    position: absolute;
+    padding: 120px 60px;
+    font-family: Bellefair;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+    color: #0B0D17;
+}
+
+@media (min-width: 760px) and (max-width: 1000px){
+    .home{
+        background: url('../../assets/home/background-home-tablet.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        padding-top: 10rem;
+    }
+    .content h5{
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+    .content h1{
+        line-height: 150px;
+    }
+    .content p{
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 760px){
+    .home{
+        background: url('../../assets/home/background-home-mobile.jpg');
+        background-size: 100% 100%;
+        flex-direction: column;
+        padding-top: 6rem;
+    }
+    .content h5{
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 2.5px;
+    }
+    .content h1{
+        font-size: 80px;
+        line-height: 100px;
+    }
+    .content p{
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .explore{
+        width: 200px;
+        height: 200px;
+    }
+    .explore p{
+        padding: 90px 55px;
+        font-size: 20px;
+        line-height: 23px;
+
+        text-align: center;
+        letter-spacing: 1.25px;
+    }
+}

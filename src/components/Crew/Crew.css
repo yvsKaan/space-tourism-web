@@ -1,0 +1,144 @@
+.crew{
+    position: absolute;
+    background: url('../../assets/crew/background-crew-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    top: 0;
+    z-index: -10;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.title{
+    display: flex;
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 34px;
+
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    width: 80%;
+    margin: 0 auto;
+    padding: 10rem 3rem 0 3rem;
+}
+.title h2{
+    font-size: 28px;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    margin-right: 1rem;
+}
+.crew-info{
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    padding: 1rem;
+    display: none;
+}
+.crew-info.active{
+    display: flex;
+}
+.crew-subinfo{
+    width: 60%;
+    margin-right: 8rem;
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+.crew-subinfo .role{
+    padding: 0 1rem;
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.crew-subinfo .name{
+    font-size: 54px;
+    line-height: 64px;
+    text-transform: uppercase;
+}
+.crew-subinfo .bio{
+    width: 70%;
+    margin-top: 2rem;
+    padding: 0 1.5rem;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+}
+.crew-image img{
+    width: 250px;
+    height: auto;
+}
+
+.crew-option{
+    width: 80%;
+    margin: 0 auto 2rem auto;
+}
+.crew-option input[type='radio']{
+    border: none;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.17;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+.crew-option input[type='radio']:checked{
+    opacity: 1;
+    background: #FFFFFF;
+}
+
+@media (min-width: 760px) and (max-width: 1000px){
+    .crew{
+        background: url('../../assets/crew/background-crew-tablet.jpg');
+    }
+    .title{
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
+    .title h2{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .crew-info.active{
+        text-align: center;
+        flex-direction: column;
+        height: auto;
+    }
+    .crew-subinfo{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .crew-subinfo .role{
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .crew-subinfo .name{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 46px;
+        text-align: center;
+    }
+    .crew-subinfo .bio{
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .crew-option{
+        width: 100%;
+        text-align: center;
+    }
+}
