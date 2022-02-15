@@ -102,6 +102,8 @@
 @media (min-width: 760px) and (max-width: 1000px){
     .crew{
         background: url('../../assets/crew/background-crew-tablet.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
     }
     .title{
         font-size: 20px;

@@ -1,21 +1,32 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Destination.css'; 
 import data from '../../assets/data.json';
-
+import moon from '../../assets/destination/image-moon.png'
+import europa from '../../assets/destination/image-europa.png'
+import titan from '../../assets/destination/image-titan.png'
+import mars from '../../assets/destination/image-mars.png'
 
 function Destination() {
+  const [DestinationOption, setDestination] = useState("Moon");
   return (
     <div className="destination-main">
         <p className="title"><h2>01</h2>PICK YOUR DESTINATION</p>
         <div className="destination-options">
             {data.destinations.map((destination)=>(
-                <span className="dest-option">{destination.name}</span>
+                <span 
+                className={"dest-option " + (DestinationOption === destination.name ? "active" : "") }
+                onClick={e => setDestination(destination.name)}>
+                    {destination.name}
+                </span>
             ))}
         </div>
         {data.destinations.map((destination)=>(
             <div className="destination">
-                <div className="dest-info">
-                    <img src={destination.images.png} alt="" /> 
+                <div className={"dest-info " + (DestinationOption === destination.name ? "active" : "")}>
+                    <img 
+                    src={DestinationOption === "Moon" ? moon : DestinationOption === "Titan" ? titan : 
+                    DestinationOption === "Mars" ? mars : europa} 
+                    alt={destination.name} /> 
                     <div className="dest-Subinfo">
                         <p className="name">{destination.name}</p>
                         <p className="description">{destination.description}</p>
