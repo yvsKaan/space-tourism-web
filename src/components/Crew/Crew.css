@@ -18,12 +18,9 @@
     font-weight: normal;
     font-size: 28px;
     line-height: 34px;
-
     letter-spacing: 4.725px;
     text-transform: uppercase;
-
     color: #FFFFFF;
-
     width: 80%;
     margin: 0 auto;
     padding: 10rem 3rem 0 3rem;
@@ -114,6 +111,15 @@
         font-size: 20px;
         line-height: 24px;
     }
+    .crew-image{
+        width: 100%;
+        margin: 1rem auto;
+        justify-content: center;
+    }
+    .crew-image img{
+        width: 90%;
+        margin: 0 1rem;
+    }
     .crew-info.active{
         text-align: center;
         flex-direction: column;
@@ -121,7 +127,7 @@
     }
     .crew-subinfo{
         width: 100%;
-        margin-bottom: 2rem;
+        margin: 2rem auto;
     }
     .crew-subinfo .role{
         font-size: 24px;
@@ -141,6 +147,54 @@
     }
     .crew-option{
         width: 100%;
+        margin: auto 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 760px){
+    .crew{
+        background: url('../../assets/crew/background-crew-mobile.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .crew-info.active{
+        width: 100%;
+        text-align: center;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .crew-image{
+        width: 80%;
+        margin: 1rem auto;
+        border-bottom: 1px solid #383B4B;
+    }
+    .crew-image img{
+        width: 60%;
+        margin: 1rem auto;
+    }
+    .crew-subinfo{
+        width: 100%;
+        margin: 1rem auto;
+        text-align: center;
+    }
+    .crew-subinfo .role{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .crew-subinfo .name{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .crew-subinfo .bio{
+        width: 90%;
+        padding: 0 0.5rem;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .crew-option{
+        width: 100%;
+        margin: auto 0;
         text-align: center;
     }
 }
