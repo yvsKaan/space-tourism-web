@@ -79,7 +79,7 @@
 
 .dest-Subinfo .distance{
     margin: 2rem 0;
-    border-top: 1px solid #383B4B;;
+    border-top: 1px solid #383B4B;
     padding: 1rem 0;
     display: flex;
     justify-content: space-between;
@@ -114,11 +114,6 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
-    .title{
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 3.375px;
-    }
     .destination-options{
         width: 100%;
         justify-content: center;
@@ -145,16 +140,6 @@
         background: url('../../assets/destination/background-destination-mobile.jpg');
         background-size: 100% 100%;
         background-repeat: no-repeat;
-    }
-    .title{
-        font-size: 16px;
-        line-height: 19px;
-        letter-spacing: 2.7px;
-    }
-    .title h2{
-        font-size: 18px;
-        line-height: 19px;
-        letter-spacing: 2.7px;
     }
     .destination-options{
         width: 100%;

@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Crew from './components/Crew/Crew';
 import Destination from './components/Destination/Destination';
+import Technology from './components/Technology/Technology';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/destination" element={ <Destination /> } />
-          <Route path="/technology" element="{}" />
+          <Route path="/technology" element={ <Technology />} />
           <Route path="/crew" element={ <Crew /> } />
           <Route exact path="/" element={ <Home /> } />
         </Routes>

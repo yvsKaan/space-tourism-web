@@ -13,7 +13,7 @@ function Destination() {
         <p className="title"><h2>01</h2>PICK YOUR DESTINATION</p>
         <div className="destination-options">
             {data.destinations.map((destination)=>(
-                <span 
+                <span key={destination.name}
                 className={"dest-option " + (DestinationOption === destination.name ? "active" : "") }
                 onClick={e => setDestination(destination.name)}>
                     {destination.name}
@@ -21,7 +21,7 @@ function Destination() {
             ))}
         </div>
         {data.destinations.map((destination)=>(
-            <div className="destination">
+            <div key={destination.name} className="destination">
                 <div className={"dest-info " + (DestinationOption === destination.name ? "active" : "")}>
                     <img 
                     src={DestinationOption === "Moon" ? moon : DestinationOption === "Titan" ? titan : 
