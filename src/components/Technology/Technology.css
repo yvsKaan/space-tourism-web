@@ -77,3 +77,19 @@
     width: 100%;
     height: auto;
 }
+
+@media (max-width: 1000px){
+    .technology{
+        background: url('../../assets/technology/background-technology-tablet.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .tech-content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .tech-info.active{
+        margin: 1rem auto;
+        text-align: center;
+    }
+}
